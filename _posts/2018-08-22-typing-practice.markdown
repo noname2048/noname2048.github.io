@@ -6,7 +6,7 @@ categories: typing
 ---
 `(` `)` 만 제방식을 취했더니 생각보다 편하고 타수가 올라갔습니다. 이제 `:` 와 `-` `=` `>` 쪽을 중심으로 조금 연습해야겠습니다.
 
-![typing result screenshot]({{ "/assets/speedcorder_result_180821.PNG" | absolute_url  }})
+![typing result screenshot]({{ "/assets/speedcorder_result_180822.PNG" | absolute_url  }})
 
 | Lseeon Summary |
 | :---: | :---:
