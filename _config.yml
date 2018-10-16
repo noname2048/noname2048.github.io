@@ -19,14 +19,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   noname2048's blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://noname2048.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
 github_username:  noname2048
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +40,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+timezone: Asia/Seoul
+encoding: utf-8
+show_excerpts: true
+paginate: 10
+paginate_path: "page/:num/"

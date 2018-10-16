@@ -1,0 +1,46 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+pagination:
+  enabled: true
+---
+<div class="index">
+    {%- if site.posts.size > 0 -%}
+    <div class="post_list">
+        {%- for post in paginator.posts -%}
+        <div class="post_short_wrapper">
+            <div class="post_short_header">
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{ post.path | file_date | date_to_string | date: "%Y년 %m월 %d일" }}</p>
+            </div>
+            
+            {%- if site.show_excerpts -%}
+            <div>
+                <p>{{ post.excerpt }}</p>
+            </div>
+            {%- endif -%}
+        </div>
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+</div>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+        </a>
+    {% else %}
+        <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+        <span class="next ">Next</span>
+    {% endif %}
+</div>
