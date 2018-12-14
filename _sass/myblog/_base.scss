@@ -1,0 +1,82 @@
+/* reset some basic element */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.site_header_warpper {
+    background-color: #a0c1f7;
+    //opacity: 0.8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: fixed;
+    width: 100%;
+}
+.blog_title {
+    color: green;
+    text-decoration: none;
+    &:hover{
+        color: blue;
+    }
+
+    display: block;
+    padding: 20px;
+    font-size: 12px;
+    h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+}
+
+.data_indicator {
+    margin: 20px;
+}
+
+.site_header_empty_space {
+    padding: 80px 0px 0px 0px;
+}
+
+.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    margin: 20px 10% 0px 10%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.post_list {
+    display: flex;
+    flex-flow: column;
+
+    padding: 10px;
+}
+
+.post_short_wrapper {
+    display: flex;
+    flex-flow: column;
+
+    padding: 10px;
+}
+
+.post_short_header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 10px;
+}
+
+p {
+    word-break:break-all;
+}
